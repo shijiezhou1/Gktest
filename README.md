@@ -2,6 +2,30 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
+## Main Page
+
+![](src/assets/img/main.png)
+
+## Main Mobile
+
+![](src/assets/img/main_mobile.png)
+
+## Add Customer Detail
+
+![](src/assets/img/add_customer_detail.png)
+
+## Customer Detail 
+
+![](src/assets/img/customer_detail.png)
+
+## Hierarchy Collapse
+
+![](src/assets/img/hierarchy_collapse.png)
+
+## Hierarchy Expand
+
+![](src/assets/img/hierarchy_expand.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
