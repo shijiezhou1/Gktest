@@ -1,0 +1,54 @@
+#container {
+  width:100%;
+  text-align:center;
+}
+
+#left {
+  float:left;
+  width:100px;
+}
+
+#center {
+  display: inline-block;
+  margin:0 auto;
+}
+
+#right {
+  float:right;
+  width:200px;
+}
+
+.customerHeader {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.customerHeaderBack {
+  cursor: pointer;
+}
+
+.customForm{
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.customBtn {
+  margin: 10px;
+}
+
+.loginWarn {
+  color:red;
+}
+
+.customMsg {
+  text-align: center;
+}

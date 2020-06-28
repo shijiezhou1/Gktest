@@ -1,0 +1,42 @@
+#container {
+  width:100%;
+  text-align:center;
+}
+
+#left {
+  float:left;
+  width:100px;
+}
+
+#center {
+  display: inline-block;
+  margin:0 auto;
+}
+
+#right {
+  float:right;
+  width:200px;
+}
+
+
+.OrderHeaderBack {
+  cursor: pointer;
+}
+
+.OrderHeader {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.customerLists {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.tableHead {
+  border-bottom: 1px solid black;
+}
+
+.customerText {
+  text-align: center;
+}

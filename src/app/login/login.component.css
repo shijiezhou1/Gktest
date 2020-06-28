@@ -1,0 +1,22 @@
+.loginForm{
+  text-align: center;
+}
+
+.loginInput{
+  margin: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}
+
+.loginWarn {
+  color:red;
+}
+
+.errorInfo {
+  color:red;
+  text-align: center;
+}

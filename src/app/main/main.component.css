@@ -1,0 +1,42 @@
+.homeHeader {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.homeRight {
+  float: right;
+  margin: 0px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+}
+.cardList > * {
+  box-sizing: border-box;
+  margin: 10px;
+  font-size: 30px;
+  color: black;
+  padding: 30px;
+}
+.cardListItem {
+  text-decoration: none;
+  border: 1px solid black;
+  flex: 1 0 calc(30%);
+  height: 100px;
+  text-align: center;
+  border-radius: 30px;
+}
+.clearfix {
+  overflow: auto;
+  height: 50px;
+}

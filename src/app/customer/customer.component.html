@@ -1,0 +1,51 @@
+<div id="container">
+  <div id="left">
+    <div class="customerHeaderBack" (click)="backClicked()">Back</div>
+  </div>
+  <div id="center">
+    <div class="customerHeader">Add Customer Details</div>
+  </div>
+  <div id="right"></div>
+</div>
+
+<p class="customMsg">{{msg}}</p>
+
+<div class="content">
+  <form class="customForm" [formGroup]="customForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="customName">Customer Name</label>
+      <input type="text" formControlName="customName" class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.customName.errors }" />
+      <div *ngIf="submitted && f.customName.errors" class="invalid-feedback">
+        <div *ngIf="f.customName.errors.required" class="loginWarn">Custom Name is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="customAge">Age</label>
+      <input type="text" formControlName="customAge" class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.customAge.errors }" />
+      <div *ngIf="submitted && f.customAge.errors" class="invalid-feedback">
+        <div *ngIf="f.customAge.errors.required" class="loginWarn">Custom Age is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="customAddress">Address</label>
+      <input type="text" formControlName="customAddress" class="form-control" />
+      <div *ngIf="submitted && f.customAddress.errors" class="invalid-feedback">
+        <div *ngIf="f.customAddress.errors.required" class="loginWarn">Custom Address is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button [disabled]="loading" class="btn btn-primary customBtn">
+        <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+        Save
+      </button>
+
+      <button [disabled]="loading" class="btn btn-warning customBtn" (click)="cancel()">
+        <span class="spinner-border spinner-border-sm mr-1"></span>
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>

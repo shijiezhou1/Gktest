@@ -1,0 +1,19 @@
+<div *ngIf="currentUser">
+  <!-- nav -->
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="navbar-nav">
+      <p class="homeHeader">Welcome to Green Koncepts</p>
+      <a class="nav-item nav-link homeRight" (click)="logout()">Logout</a>
+      <a class="nav-item nav-link homeRight" routerLink="/main">{{currentUser.username}}</a>
+    </div>
+  </nav>
+
+  <div class="clearfix"></div>
+
+  <!-- 6 grid -->
+  <div class="cardList">
+    <ng-container class="homeLink" *ngFor="let ti of tiles">
+      <a class="nav-item nav-link cardListItem" routerLink="{{ti.url}}">{{ti.name}}</a>
+    </ng-container>
+  </div>
+</div>

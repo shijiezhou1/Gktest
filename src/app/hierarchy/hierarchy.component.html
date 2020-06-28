@@ -1,0 +1,11 @@
+<div id="container">
+  <div id="left">
+    <div class="hierarchyHeaderBack" (click)="backClicked()">Back</div>
+  </div>
+  <div id="center">
+    <div class="hierarchyHeader">Hierarchy</div>
+  </div>
+  <div id="right"></div>
+</div>
+
+<app-menu-tree [treeData]="hierarchyLists"></app-menu-tree>

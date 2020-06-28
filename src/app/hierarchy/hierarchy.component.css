@@ -1,0 +1,28 @@
+#container {
+  width:100%;
+  text-align:center;
+}
+
+#left {
+  float:left;
+  width:100px;
+}
+
+#center {
+  display: inline-block;
+  margin:0 auto;
+}
+
+#right {
+  float:right;
+  width:200px;
+}
+
+.hierarchyHeader {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.hierarchyHeaderBack {
+  cursor: pointer;
+}

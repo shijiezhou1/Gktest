@@ -1,0 +1,10 @@
+<ul class="treeParent">
+  <li class="treeLists" *ngFor="let td of treeData">
+    <span *ngIf="td.children?.length" id={{td.nodeId}} (click)="toggleChildren(td)">
+      <span *ngIf="!td.visible"><i class="arrow right"></i></span>
+      <span *ngIf="td.visible"><i class="arrow down"></i></span>
+    </span>
+      <span class="textButton" (click)="toggleChildren(td)">{{td.displayName}}</span>
+    <app-menu-tree [treeData]="td.children" *ngIf="td.visible"></app-menu-tree>
+  </li>
+</ul>
